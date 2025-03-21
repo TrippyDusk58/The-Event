@@ -20,7 +20,7 @@
 /* Global Colors */
 :root {
   --background-color: #ffffff; /* Light background */
-  --default-color: #2f3138; /* Dark gray for text */
+  --default-color: #f1e9e9; /* Dark gray for text */
   --heading-color: #0e1b4d; /* Deep blue for headings */
   --accent-color: #ff6b6b; /* Coral red for accents */
   --surface-color: #f8f9fa; /* Light gray for surfaces */
@@ -29,7 +29,7 @@
 
 /* Nav Menu Colors */
 :root {
-  --nav-color: rgba(47, 49, 56, 0.65); /* Semi-transparent dark gray */
+  --nav-color: rgb(255, 255, 255); /* Semi-transparent dark gray */
   --nav-hover-color: #ff6b6b; /* Coral red for hover */
   --nav-mobile-background-color: #ffffff; /* White for mobile nav */
   --nav-dropdown-background-color: #ffffff; /* White for dropdown */
