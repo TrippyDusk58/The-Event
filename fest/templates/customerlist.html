@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Customer List{% endblock %}
+{% block content %}
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <h2 style="color: orange;font-weight: bold;font-family: 'DejaVu Serif';font-size: medium;padding: 10px">CUSTOMER LIST</h2>
+    <table class="table">
+      <thead>
+       <tr>
+
+         <th>NAME</th>
+         <th>EMAIL</th>
+         <th>SUBJECT</th>
+         <th>MESSAGE</th>
+       </tr>
+      </thead>
+      <tbody>
+       {% for customer in data %}
+       <tr>
+
+         <td>{{ customer.name }}</td>
+         <td>{{ customer.email }}</td>
+         <td>{{ customer.subject }}</td>
+         <td>{{ customer.message }}</td>
+         <td><a href="{% url 'editcustomer' customer.id %}" class="btn btn-success" type="button">EDIT CUSTOMER</a></td>
+         <td><a href="{% url 'deletecustomer' customer.id %}" type="button" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this customer?')">DELETE CUSTOMER</a></td>
+       </tr>
+
+       {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-2"></div>
+
+
+
+
+</div>
+
+{% endblock %}

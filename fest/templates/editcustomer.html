@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Edit Student{% endblock %}
+{% block content %}
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+       <h2 style="color: orange;font-weight: bold;font-family: 'DejaVu Serif';font-size: medium;padding: 10px">EDIT CUSTOMER</h2>
+       <form action="" method="POST" enctype="multipart/form-data">
+             {% csrf_token %}
+             {{ form }}
+             <button class="btn btn-success" type="submit">Edit Customer</button>
+       </form>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+
+{% endblock %}
